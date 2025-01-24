@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primaryColor: #000000;
+  --secondaryColor: #dadada;
+  --accentColor: #39ace7;
+  --backgroundColor: #ffffff;
+}
+
+html::-moz-selection {
+  background-color: var(--secondaryColor);
+  color: black;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--backgroundColor);
+}
+
+/* Base container styles (mobile-first approach) */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 16px 20px;
+}
+
+/* Small devices (sm) - >= 640px */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding: 24px;
+  }
+}
+
+/* Medium devices (md) - >= 768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 32px;
+  }
+}
+
+/* Large devices (lg) - >= 1024px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 40px;
+  }
+}
+
+/* Extra-large devices (xl) - >= 1280px */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 64px;
+  }
+}
+
+/* Double extra-large devices (2xl) - >= 1536px */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding: 64px;
+  }
+}
