@@ -1,0 +1,44 @@
+<!-- templates/invoice.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Invoice List</h1>
+
+  <!-- Invoice Table -->
+  <table class="invoice-table">
+    <thead>
+      <tr>
+        <th>Invoice ID</th>
+        <th>Customer</th>
+        <th>Date</th>
+        <th>Total Amount</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example Rows -->
+      <tr>
+        <td>INV001</td>
+        <td>John Doe</td>
+        <td>2025-01-25</td>
+        <td>$500</td>
+        <td>Paid</td>
+      </tr>
+      <tr>
+        <td>INV002</td>
+        <td>Jane Smith</td>
+        <td>2025-01-24</td>
+        <td>$300</td>
+        <td>Pending</td>
+      </tr>
+      <tr>
+        <td>INV003</td>
+        <td>Sam Wilson</td>
+        <td>2025-01-23</td>
+        <td>$750</td>
+        <td>Paid</td>
+      </tr>
+      <!-- More rows can be added dynamically here -->
+    </tbody>
+  </table>
+{% endblock %}

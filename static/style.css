@@ -70,3 +70,144 @@ body {
     padding: 64px;
   }
 }
+
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+}
+
+.logo {
+  background-color: #D7D4D4;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-box {
+  background-color: #D7D4D4;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 40px;
+  max-width: 170px;
+  margin: 0 auto; 
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* static/style.css */
+
+* Navbar styles */
+.navbar {
+  background-color: #D7D4D4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #333;
+}
+
+/* Table styles */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.invoice-table th, .invoice-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #D7D4D4;
+}
+
+.invoice-table thead {
+  background-color: #D7D4D4;
+  color: black;
+}
+
+.invoice-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.invoice-table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.invoice-table tbody tr:hover {
+  background-color: #D7D4D4;
+}

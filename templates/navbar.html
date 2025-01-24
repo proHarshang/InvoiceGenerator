@@ -1,0 +1,15 @@
+<!-- templates/navbar.html -->
+<nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo on the left side -->
+      <a href="{% url 'index' %}" class="logo">Invoice Generator</a>
+      
+      <!-- Navbar links on the right side -->
+      <ul class="navbar-links">
+        <li><a href="{% url 'create_invoice' %}">Create</a></li>
+        <li><a href="{% url 'settings' %}">Settings</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  
